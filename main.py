@@ -17,7 +17,7 @@ def generate_eth_address():
     return private_key, eth_address
 while True:
     eth_private_key, eth_address = generate_eth_address()
-    api_key = 'GZ8A1NZKIPJXKDUMZ1USNVVBD9SNUM3YX5'
+    api_key = 'ETHSCAN_KEY'
     url = f'https://api.etherscan.io/api?module=account&action=balance&address={eth_address}&tag=latest&apikey={api_key}'
     print(Fore.GREEN + f"Private Key: {eth_private_key}")
     print(Fore.WHITE + f"Address: {eth_address}")
